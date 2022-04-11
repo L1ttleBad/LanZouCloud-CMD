@@ -32,6 +32,7 @@ class Commander:
     def __init__(self):
         self._prompt = '> '
         self._disk = LanZouCloud()
+        self._disk.ignore_limits()
         self._is_login = False
         self._task_mgr = global_task_mgr
         self._dir_list = FolderList()
